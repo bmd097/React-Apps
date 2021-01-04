@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    background: rgb(61, 60, 60);
+    flex-direction: column;
+}
+.main h1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-shadow: black 0px 0px 7px;
+    font-size: 50px;
+    justify-content: center;
+    height: 15%;
+}
+.main .display{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item{
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    height: 43%;
+    border-radius: 10px;
+    box-shadow: black 0px 0px 10px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item p{
+    font-size: 140px;
+    margin-right: 40px;
+    z-index: 20;
+    color: white;
+    text-shadow: black 0px 0px 10px;
+}
+.item button{
+    z-index: 20;
+    padding: 15px 20px;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.068) 0px 0px 10px;
+    color: white;
+    transition: all ease-in-out 0.4s;
+    outline: none;
+}
+.item .btn-active:active{
+    transform: scale(0.9);
+}
+.item .btn-active{
+    background: linear-gradient(to right bottom,rgb(3, 209, 20),rgb(21, 255, 0));
+}
+.item .btn-inactive{
+    background: linear-gradient(to right bottom,rgb(255, 0, 55),rgb(255, 115, 0));
+    cursor: not-allowed;
+    color: rgb(255, 255, 255);
+    pointer-events: none;
+}
+
+.item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+}
