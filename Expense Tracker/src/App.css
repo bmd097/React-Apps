@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 19px;
+    margin: 0;
+    transition: all ease-in-out 0.2s;
+    padding: 0;
+}
+body{
+    background-color: rgb(238, 238, 238);
+}
+.App{
+    width: 450px;
+    height: 700px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.App > h1{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    align-items: center;
+}
+.App section{
+    width: 100%;
+    height: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bal-details>p{
+    font-size: 1.08rem;
+}
+.bal-details>h2{
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+.bal-details .bal-cards{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.363) 0px 0px 5px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.bal-cards .card{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bal-cards .card p:nth-of-type(2){
+    font-size: 1.5rem;
+}
+.bal-cards .card:first-of-type{
+    border-right: 1.5px solid rgb(121, 121, 121);
+}
+.bal-cards .card:first-of-type p:last-of-type{
+    color: rgb(0, 184, 0);
+}
+.bal-cards .card:last-of-type p:last-of-type{
+    color: rgb(255, 0, 34);
+}
+
+section h3{
+    width: 100%;
+    height: 15%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px solid rgb(177, 177, 177);
+}
+.bal-his{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bal-his .bal-his-card{
+    width: 100%;
+    margin-bottom: 9px;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.233) 0px 0px 5px;
+}
+.bal-his .bal-his-card p{
+    margin: 10px;
+}
+.deposit{
+    border-right: 6px rgb(5, 228, 5) solid;
+}
+.withdrawl{
+    border-right: 6px rgb(228, 5, 35) solid;
+}
+.transactions-display{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.transaction-card{
+    width: 100%;
+    height: 47%;
+}
+.transaction-card p{
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    margin-top: 4px;
+}
+.transaction-card input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 6px;
+    border: 1px solid rgba(150, 150, 150, 0.795);
+}
+section button{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    background: rgba(143, 28, 250, 0.781);
+}
+section button:hover{
+    background: rgb(129, 20, 231);
+}
+section button:active{
+    background: rgb(67, 9, 121);
+}
